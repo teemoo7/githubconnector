@@ -1,0 +1,23 @@
+{
+  "name": "githubconnector",
+  "version": "1.0.0",
+  "description": "GitHub Enterprise Connector for MS Teams aiming at posting a message when a review is requested for a PR",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "mocha --exit"
+  },
+  "author": "Micael Paquier",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.2.2",
+    "express": "^4.17.1",
+    "restler": "^3.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0"
+  }
+}
