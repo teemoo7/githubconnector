@@ -28,7 +28,8 @@ There are 3 steps that must be done. Each step is described later in the doc.
 * Setup an incoming WebHook in your MS Teams channel ([doc](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/connectors/connectors-using#setting-up-a-custom-incoming-webhook)), and note its URL (something like `https://outlook.office.com/webhook/...`).
 * Put the WebHook URL in the config file `config/default.json`.
 
-### Run the app
+
+### Run the app
 
 The app is a simple Node.js server, and basically it must be reachable from your GitHub server. 
 
@@ -64,7 +65,8 @@ Two options here:
     * Fine-tune the events that you want to be sent. Currently, only the PR review requests are supported by the connector, the other ones are ignored, so you can select option `Let me select individual events`, and then only tick checkbox `Pull requests`
     * Make sure that the WebHook is marked as `Active`
     
-## Test it 
+
+## Test it 
 
 * Of course the code has some automatic tests implemented: `npm test` 
 * You can simulate GitHub notification by simply send a `POST` (with Postman for example) on the app URL, with a an appropriate JSON payload, e.g.:
