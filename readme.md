@@ -1,3 +1,7 @@
+⚠️ This repository is no longer maintained
+
+----
+
 # GitHub Connector
 
 This small app aims at posting a notification in a channel whenever a reviewer is requested for a PR in GitHub.
